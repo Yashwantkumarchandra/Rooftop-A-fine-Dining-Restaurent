@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url('/images/background.jpg') ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+    
+header{
+     z-index:1000 ;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+  
+}
+
+.home{
+    color: rgb(173,154,101);
+}
+
+header div span:hover{
+    color: rgb(173,154,101);
+}
+
+header div span{
+    font-size: 20px;
+    margin:20px 40px 0px 0px;
+    padding-left: 40px;
+}
+
+header div img{
+    height: 80px;
+    width: 90px;
+}
+
+section{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    height: 100vh;
+    letter-spacing: 15px;
+    line-height: 1.7em;
+}
+
+section div h1{
+    text-align: center;
+}
+h1::selection , p::selection, span::selection , img::selection{
+    background: rgb(173,154,101);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.fixed-menu{
+    background: url('./images/view-menu.png') no-repeat center;
+    letter-spacing: normal;
+    min-height: 180px;
+    position: fixed;
+    left: 0px;
+    transition: 0.5s;
+    color: black;
+    width: 92px;
+}
+
+.fixed-table{
+    background: url('./images/book-table-bg.png') no-repeat center;
+    letter-spacing: normal;
+    min-height: 180px;
+    position: fixed;
+    right: 0px;
+    transition: 0.5s;
+    color: white;
+    width: 92px;
+}
+
+
+.fixed-menu p , .fixed-table p {
+    transform: rotate(270deg);
+    margin-top: 70px;
+    transition: all 0.4s ease 0s;
+    font-size: 14px;
+    padding: auto;
+    margin-left: 10px;
+    z-index: 40000;
+
+}
+ 
+
+.fixed-menu:hover p , .fixed-table:hover p {
+    transform: rotate(360deg);
+   
+    
+}
+
+main div{
+    display:flex;
+    background-color: white;
+
+}
+
+.menu {
+    width: 100%;
+}
+ 
+
+.left-menu{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-menu h1 {
+    letter-spacing: 10px;
+    text-align: justify;
+}
+
+.left-menu p {
+    width: 300px;
+    line-height: 30px;
+    word-break: keep-all;
+}
+
+.left-menu  button {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: rgb(173,153,102);
+    color: white;
+    border: none;
+    transition: 0.4s;
+}
+
+.left-menu button:hover{
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+    transition: 0.4s;
+}
+
+.right-menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,245,240);
+    padding-top: 40px;
+    
+}
+
+.right-menu h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    border-bottom: 1px dashed black;
+}
+
+.all-images-container {  
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 30px;
+    
+}
+
+.images-cards {
+        overflow: hidden;
+        height: 600px;
+        width: 400px;
+}
+
+.image-container{
+    width: 100%;
+    height: 100%;
+    object-position: right;
+    background-size: cover;
+    transition: 0.4s;
+    
+}
+
+.image-container div{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+
+}
+
+.image-container div span{
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+   
+}
+
+.image-container:hover  {
+   transform: scale(1.1);
+   transition: 0.4s;
+   
+}
+.image-container:hover div{
+    opacity: 1;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+
+.images-cards:nth-child(1){
+    margin: -80px 0px 0px 200px;
+    width: 70%;
+    height: 110%;
+}
+
+.images-cards:nth-child(2){
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+.images-cards:nth-child(3){
+    margin: 20px 0px 0px 320px;
+    height: 90%;
+
+}
+.images-cards:nth-child(4){
+    margin-top: 200px;
+    width: 70%;
+}
+
+.booking{
+    background-image: url("./images/section-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* margin-top: 50px; */
+}
+
+#booking-forms{
+   width: 40%;
+   margin-top: 40px;
+   margin-left: 40px;
+   padding: 40px;
+   /* background-color: rgb(182,169,152); */
+   background-image:linear-gradient(to top  ,  rgb(252,253,255)25%,rgb(182,169,152));
+   border-radius: 30px;
+}
+
+#booking-forms div{
+    margin-top: 30px;
+}
+#booking-forms label {
+    color: black;
+}
+
+.chef-quotes{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chef-talk{
+    text-align: center;
+    margin-top: 300px;
+}
+
+.chef-talk p{
+    word-wrap: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 450px;
+    margin-left: 200px;
+}
+
+.chef-img{
+    width: 50%;
+    text-align: center;
+}
+.chef-img img{
+    width: 120%;
+    height: 100%;
+}
+
+.chef-quotes h3{
+    letter-spacing: normal;
+    margin-left: 300px;
+}
+
+.about{
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 60%;
+    padding: 100px;
+    background-color: rgb(4,9,30);
+    /* padding: 100px; */
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4,9,30);
+}
+
+.footer-body{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-body h6{
+    color: white;
+}
+
+.footer-body p {
+    color: rgb(93,74,70);
+}
+
+.footer-body input {
+    background-color: rgb(4,9,30)
+}
+
+.footer-footer{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(93,74,70) ;
+    margin-top: 40px;
+}
