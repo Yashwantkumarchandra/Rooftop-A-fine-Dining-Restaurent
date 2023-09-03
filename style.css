@@ -9,6 +9,7 @@ html,body {
     height: 100%;
     width: 100%;
 }
+/* added background image */
 body{
     background-image: url('./images/background.jpg');
     background-size: cover;
